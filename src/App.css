@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+  /* color: #fff; */
+  text-align: center;
+  font-size: 2rem;
+  font-family: "syne";
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #2d3436;
+}
+
+.todo-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 54rem;
+    margin: 10rem auto 2rem;
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    
+   background: linear-gradient(to right, #ece9e6, #ffffff );
+   box-shadow: rgba(255, 225, 225, 0.2) 0rem 0.2rem 1rem;
+}
+
+p{
+    margin: 1rem;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #f5f5f7;
+    width: 80%;
+    /* max-width: 54rem; */
+    padding: 0.5rem;
+    /* margin-left: 6rem; */
+}
+#button{
+    /* margin-left: 6rem; */
+    margin-bottom: 0.5rem;
+}
+
+li:hover{
+    background-color:rgb(235, 123, 103) ;
+}
+
+.icon-style{
+    font-size: 1.5em;
+    color: rgba(177, 11, 11, 0.817);
+}
+
+    
+
+input{
+    padding: 0.9rem;
+    font-size: 1rem;
+    background-color: #f5f5f7;
+    border: none;
+    border-radius: 0.8rem;
+    outline: none;
+}
+
+button{
+    padding: 0.8rem;
+    background-color:#2d3436;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    color: #f5f5f7;
+}
+
+ul{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 50%;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    margin-bottom: 2.5rem;
+    /* margin-left: 12rem; */
+    background-color: #f5f5f7;
+}
+
+@media screen and (max-width: 442px){
+    .todo-app{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 80%;
+    }
+    .row{
+      
+      
+       width: 100%;
+       padding: 0;
+        
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p{
+        margin: 1rem;
+    }
+    input{
+        width: 80%;
+    }
+    button{
+        margin: 0;
+        /* padding: 0; */
+        font-size: 0.5rem;
+    }
+    ul{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .todo-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        margin: 1rem;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}
